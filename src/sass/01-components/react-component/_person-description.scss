@@ -1,0 +1,19 @@
+.person-description {
+    margin-bottom: $spacing-secondary;
+    cursor: default;
+
+    h2 {
+        margin-bottom: 8px;
+        font-family: $font-robotoslab;
+        font-size: $size-font-xxl;
+        font-weight: 200;
+        color: $color-contrast;
+    }
+
+    p {
+        font-family: $font-poppins;
+        font-size: $size-font-m;
+        font-weight: 400;
+        color: $color-contrast;
+    }
+}

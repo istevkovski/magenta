@@ -1,0 +1,17 @@
+html {
+    font-size: $size-font;
+    color: $color-contrast;
+}
+
+body {
+
+    #root {
+        margin: auto auto;
+        max-width: 1366px;
+        background-color: $color-background;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+}

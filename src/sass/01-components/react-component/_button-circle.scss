@@ -1,0 +1,43 @@
+.button-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border: 1px solid $color-branding;
+    border-radius: 100%;
+    background-color: transparent;
+    transform: translate(0, 0);
+    transition: all .2s;
+
+    i {
+        display: flex;
+        font-size: 17px;
+        justify-content: center;
+        align-items: center;
+        color: $color-branding;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-branding;
+        transform: translate(-1px, -2px);
+
+        i {
+            color: $color-white;
+        }
+    }
+}
+
+.button-circle {
+    &.facebook i:before {
+        content: "\f39e";
+    }
+    &.instagram i:before {
+        content: "\f16d";
+    }
+    &.linkedin i:before {
+        content: "\f0e1";
+    }
+}

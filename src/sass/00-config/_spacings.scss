@@ -1,0 +1,75 @@
+.margin {
+    &-default {
+        margin: $spacing-default;
+    }
+    &-default-top {
+        margin-top: $spacing-default;
+    }
+    &-default-right {
+        margin-right: $spacing-default;
+    }
+    &-default-bottom {
+        margin-bottom: $spacing-default;
+    }
+    &-default-left {
+        margin-left: $spacing-default;
+    }
+
+    &-default-half {
+        margin: $spacing-default-half;
+    }
+    &-default-half-top {
+        margin-top: $spacing-default-half;
+    }
+    &-default-half-right {
+        margin-right: $spacing-default-half;
+    }
+    &-default-half-bottom {
+        margin-bottom: $spacing-default-half;
+    }
+    &-default-half-left {
+        margin-left: $spacing-default-half;
+    }
+
+    &-none {
+        margin: 0;
+    }
+}
+
+.padding {
+    &-default {
+        padding: $spacing-default;
+    }
+    &-default-top {
+        padding-top: $spacing-default;
+    }
+    &-default-right {
+        padding-right: $spacing-default;
+    }
+    &-default-bottom {
+        padding-bottom: $spacing-default;
+    }
+    &-default-left {
+        padding-left: $spacing-default;
+    }
+
+    &-default-half {
+        padding: $spacing-default-half;
+    }
+    &-default-half-top {
+        padding-top: $spacing-default-half;
+    }
+    &-default-half-right {
+        padding-right: $spacing-default-half;
+    }
+    &-default-half-bottom {
+        padding-bottom: $spacing-default-half;
+    }
+    &-default-half-left {
+        padding-left: $spacing-default-half;
+    }
+
+    &-none {
+        padding: 0;
+    }
+}

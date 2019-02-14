@@ -1,0 +1,50 @@
+.feature-display-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 200px;
+    background-color: transparentize($color-background, 0.08);
+    border-radius: 2px;
+    transform: translate(0, 0);
+    transition: all .2s;
+
+    h2 {
+        font-family: $font-poppins;
+        font-size: $size-font-m;
+        font-weight: 400;
+        color: $color-branding;
+        line-height: 1;
+    }
+
+    p {
+        font-family: $font-poppins;
+        font-size: $size-font-xs;
+        color: $color-contrast;
+    }
+
+    &.active {
+        background-color: $color-background;
+    }
+
+    &:first-child {
+        margin-top: $spacing-default;
+    }
+
+    &:last-child {
+        margin-bottom: $spacing-default;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: $spacing-default;
+    }
+
+    &:hover {
+        transform: translate(-2px, -2px);
+    }
+}

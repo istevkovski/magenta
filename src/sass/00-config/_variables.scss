@@ -1,0 +1,37 @@
+/* Font Names */
+$font-robotoslab: 'Roboto Slab', serif;
+$font-poppins: 'Poppins', sans-serif;
+
+/* endOf Font Names */
+
+/* Sizes */
+// Spacing Size
+$spacing-default: 40px;
+$spacing-default-half: $spacing-default / 2;
+$spacing-default-double: $spacing-default * 2;
+$spacing-secondary: 30px;
+$spacing-secondary-half: $spacing-secondary / 2;
+$spacing-secondary-double: $spacing-secondary * 2;
+
+// Font Sizes
+$size-font-xxs: 10px;
+$size-font-xs: 12px;
+$size-font-s: 14px;
+$size-font: 16px;
+$size-font-m: 18px;
+$size-font-l: 28px;
+$size-font-xl: 32px;
+$size-font-xxl: 40px;
+
+/* endOf Sizes */
+
+/* Colors */
+// Colors
+$color-branding: #FF9B00;
+
+// Grays
+$color-white: #fff;
+$color-background: #FCFCFC;
+$color-contrast: #505050;
+
+/* endOf Colors */

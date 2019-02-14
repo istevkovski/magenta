@@ -1,0 +1,38 @@
+.header-navigation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+
+    * {
+        color: inherit;
+        text-decoration: none;
+        transition: all .25s;
+
+        &:hover {
+            color: $color-branding;
+        }
+    }
+
+    *:not(.link) {
+        margin-right: $spacing-default;
+    }
+
+    *:not(.brand):not(:last-child) {
+        margin-right: $spacing-secondary;
+    }
+
+    .brand {
+        font-family: $font-poppins;
+        font-size: $size-font-l;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .link {
+        font-family: $font-poppins;
+        font-size: $size-font-m;
+        font-weight: 300;
+        cursor: pointer;
+    }
+}

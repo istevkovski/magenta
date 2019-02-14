@@ -1,0 +1,10 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: $color-contrast;
+    color: $color-white;
+    font-family: $font-poppins;
+    font-size: $size-font-xs;
+}

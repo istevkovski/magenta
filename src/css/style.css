@@ -1,0 +1,22 @@
+/* Sizes */
+/* endOf Sizes */
+/* Colors */
+/* endOf Colors */
+.btn-hire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+  width: 700px;
+  height: 100px;
+  background-color: #fff;
+  color: #505050;
+  border: none;
+  border-left: 3px solid #FF9B00;
+  font-size: 32px;
+  font-weight: 200;
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.16);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.16); }

@@ -1,0 +1,29 @@
+.button-hire{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: $spacing-default;
+    width: calc(100% + 57px);
+    height: 100px;
+    background-color: $color-white;
+    color: $color-contrast;
+    border: none;
+    border-left: 3px solid $color-branding;
+    font-family: $font-robotoslab;
+    font-size: $size-font-xxl;
+    font-weight: 200;
+    box-shadow: 4px 4px 8px rgba(0,0,0, .16);
+    cursor: pointer;
+    transform: translate(0, 0);
+    transition: all .2s;
+
+    &:hover {
+        transform: translate(-2px ,-3px);
+    }
+
+    i.material-icons {
+        position: absolute;
+        right: $spacing-secondary;
+        font-size: $size-font-xl;
+    }
+}

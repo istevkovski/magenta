@@ -1,0 +1,19 @@
+.social-links {
+    display: flex;
+
+    &.top {
+        margin-top: $spacing-secondary;
+    }
+
+    &.bottom {
+        margin-bottom: $spacing-secondary;
+    }
+
+    &.both {
+        margin: $spacing-secondary 0;
+    }
+
+    *:not(:last-child) {
+        margin-right: 25px;
+    }
+}
