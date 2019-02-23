@@ -1,0 +1,53 @@
+.main-view {
+    display: flex;
+
+    > div {
+        width: 50%;
+        min-height: calc(100vh - 50px);
+
+        .button-hire {
+            width: calc(100% + 57px);
+        }
+    }
+
+    .main-display {
+        padding-left: $spacing-default;
+        padding-bottom: $spacing-default;
+        overflow: visible;
+        z-index: 1;
+    }
+
+    > div:last-child {
+        background-color: $color-branding;
+    }
+}
+
+@media only screen and (max-width: $size-screen-desktop-m) {
+    .main-view {
+        flex-direction: column;
+
+        > div {
+            width: 100%;
+            min-height: unset;
+        }
+
+        > div .button-hire {
+            width: calc(100% - 57px);
+        }
+    }
+}
+
+@media only screen and (max-width: $size-screen-mobile-l) {
+    .main-view > div .button-hire {
+        width: calc(100% - 20px);
+    }
+}
+
+// Flex Wrappers
+.wrapper-flex {
+    display: flex;
+
+    &-column {
+        flex-direction: column;
+    }
+}

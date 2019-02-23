@@ -1,11 +1,12 @@
 @import "./00-config/css-reset";
 @import "./00-config/variables";
 @import "./00-config/spacings";
+@import "./00-config/wrappers";
+@import "./00-config/main-view";
 
 @import "./01-components/interactive/button";
 
 @import "./01-components/static/text-blocks";
-@import "./01-components/static/wrappers";
 
 @import "./01-components/react-component/header-navigation";
 @import "./01-components/react-component/person-description";
@@ -14,6 +15,7 @@
 @import "./01-components/react-component/social-links";
 @import "./01-components/react-component/feature-display-card";
 @import "./01-components/react-component/loading";
+@import "./01-components/react-component/profile-image";
 
 @import "./01-components/react-views/home";
 @import "./01-components/react-views/side-display";

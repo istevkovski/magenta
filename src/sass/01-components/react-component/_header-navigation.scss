@@ -6,19 +6,21 @@
 
     * {
         color: inherit;
+        border: none;
+        background: transparent;
         text-decoration: none;
         transition: all .25s;
 
-        &:hover {
+        &:not(div):hover {
             color: $color-branding;
         }
     }
 
-    *:not(.link) {
+    .brand {
         margin-right: $spacing-default;
     }
 
-    *:not(.brand):not(:last-child) {
+    .link:not(:last-child) {
         margin-right: $spacing-secondary;
     }
 
@@ -34,5 +36,25 @@
         font-size: $size-font-m;
         font-weight: 300;
         cursor: pointer;
+    }
+
+    .active {
+        color: $color-branding;
+    }
+}
+
+@media only screen and (max-width: $size-screen-mobile-l) {
+    .header-navigation {
+        flex-direction: column;
+        margin-top: $spacing-default-half;
+
+        .brand {
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        div {
+            margin: 0;
+        }
     }
 }

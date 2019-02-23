@@ -11,6 +11,7 @@
     max-height: 200px;
     background-color: transparentize($color-background, 0.08);
     border-radius: 2px;
+    text-align: center;
     transform: translate(0, 0);
     transition: all .2s;
 
@@ -22,10 +23,20 @@
         line-height: 1;
     }
 
+    h4 {
+        font-family: $font-poppins;
+        font-style: $size-font-l;
+        color: $color-contrast;
+    }
+
     p {
         font-family: $font-poppins;
         font-size: $size-font-xs;
         color: $color-contrast;
+    }
+
+    img {
+        max-height: 48px;
     }
 
     &.active {
@@ -46,5 +57,15 @@
 
     &:hover {
         transform: translate(-2px, -2px);
+    }
+}
+
+@media only screen and (max-width: $size-screen-mobile-l) {
+    .feature-display-card {
+        width: 100%;
+        max-width: unset;
+        min-width: 300px;
+        max-height: unset;
+        min-height: 200px;
     }
 }

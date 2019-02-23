@@ -31,6 +31,22 @@
         margin-left: $spacing-default-half;
     }
 
+    &-secondary {
+        margin: $spacing-secondary;
+    }
+    &-secondary-top {
+        margin-top: $spacing-secondary;
+    }
+    &-secondary-right {
+        margin-right: $spacing-secondary;
+    }
+    &-secondary-bottom {
+        margin-bottom: $spacing-secondary;
+    }
+    &-secondary-left {
+        margin-left: $spacing-secondary;
+    }
+
     &-none {
         margin: 0;
     }

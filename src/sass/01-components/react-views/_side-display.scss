@@ -5,4 +5,39 @@
     justify-content: center;
     align-items: center;
     background-color: $color-background;
+
+    .slide-buttons {
+        position: absolute;
+        right: $spacing-default;
+        top: 50%;
+        transform: translateY(-50%);
+
+        button {
+            margin-bottom: $spacing-secondary;
+            color: $color-white;
+            border-color: $color-white;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        button i {
+            color: $color-white;
+            font-size: $size-font-xl;
+        }
+    }
+}
+
+@media only screen and (max-width: $size-screen-mobile-l) {
+    .side-display {
+        padding: 0 10px;
+    }
+
+    .side-display .slide-buttons {
+        position: relative;
+        top: unset;
+        right: unset;
+        transform: rotateZ(-90deg);
+    }
 }

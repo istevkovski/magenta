@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     padding-left: $spacing-default;
-    width: calc(100% + 57px);
+    width: 100%;
     height: 100px;
     background-color: $color-white;
     color: $color-contrast;
@@ -17,13 +17,16 @@
     transform: translate(0, 0);
     transition: all .2s;
 
-    &:hover {
-        transform: translate(-2px ,-3px);
-    }
-
     i.material-icons {
         position: absolute;
         right: $spacing-secondary;
         font-size: $size-font-xl;
+    }
+
+    &:hover {
+        transform: translate(-2px ,-3px);
+    }
+    &:active {
+        transform: translate(1px, 2px);
     }
 }

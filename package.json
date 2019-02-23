@@ -5,6 +5,7 @@
   "homepage": "https://primology.github.io/magenta/",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-router-dom": "^4.3.1",

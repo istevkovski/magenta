@@ -28,6 +28,32 @@
             color: $color-white;
         }
     }
+    &:active {
+        transform: translate(1px, 2px);
+    }
+}
+
+@media only screen and (max-width: $size-screen-mobile-l) {
+    .button-circle {
+
+        &:hover {
+            transform: none;
+            animation: click .3s normal;
+        }
+
+        &:active {
+            transform: none;
+        }
+    }
+}
+
+@keyframes click {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(1px, 2px);
+    }
 }
 
 .button-circle {
