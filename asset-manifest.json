@@ -1,13 +1,13 @@
 {
-  "main.css": "/magenta/static/css/main.1be5cb4d.chunk.css",
-  "main.js": "/magenta/static/js/main.78926ba3.chunk.js",
-  "main.js.map": "/magenta/static/js/main.78926ba3.chunk.js.map",
-  "static/js/1.659d71dd.chunk.js": "/magenta/static/js/1.659d71dd.chunk.js",
-  "static/js/1.659d71dd.chunk.js.map": "/magenta/static/js/1.659d71dd.chunk.js.map",
+  "main.css": "/magenta/static/css/main.975b752d.chunk.css",
+  "main.js": "/magenta/static/js/main.bf87f4d0.chunk.js",
+  "main.js.map": "/magenta/static/js/main.bf87f4d0.chunk.js.map",
+  "static/js/1.f3f63624.chunk.js": "/magenta/static/js/1.f3f63624.chunk.js",
+  "static/js/1.f3f63624.chunk.js.map": "/magenta/static/js/1.f3f63624.chunk.js.map",
   "runtime~main.js": "/magenta/static/js/runtime~main.fa356356.js",
   "runtime~main.js.map": "/magenta/static/js/runtime~main.fa356356.js.map",
-  "static/css/main.1be5cb4d.chunk.css.map": "/magenta/static/css/main.1be5cb4d.chunk.css.map",
+  "static/css/main.975b752d.chunk.css.map": "/magenta/static/css/main.975b752d.chunk.css.map",
   "index.html": "/magenta/index.html",
-  "precache-manifest.2971c342300227e5b84faccc9c22dea0.js": "/magenta/precache-manifest.2971c342300227e5b84faccc9c22dea0.js",
+  "precache-manifest.a3f41d7df07fe7dfa7d4c3dc2eddb09d.js": "/magenta/precache-manifest.a3f41d7df07fe7dfa7d4c3dc2eddb09d.js",
   "service-worker.js": "/magenta/service-worker.js"
 }
