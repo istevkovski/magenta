@@ -1,0 +1,38 @@
+.about-information {
+    padding-top: $spacing-default;
+    font-family: $font-poppins;
+    font-size: $size-font-m;
+    font-weight: 300;
+
+    > div {
+        display: flex;
+        margin-bottom: 5px;
+    }
+
+    > div p {
+        max-width: 120px;
+        min-width: 120px;
+    }
+
+    > .highlights {
+        display: flex;
+    }
+
+    > .highlights > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills > div span {
+        display: inline-block;
+        color: $color-contrast;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        padding: 3px;
+        border: 1px solid $color-branding;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+}

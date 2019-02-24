@@ -11,6 +11,7 @@
     }
 
     .main-display {
+        position: relative;
         padding-left: $spacing-default;
         padding-bottom: $spacing-default;
         overflow: visible;
@@ -50,4 +51,8 @@
     &-column {
         flex-direction: column;
     }
+}
+
+.color-text-orange {
+    color: $color-branding;
 }

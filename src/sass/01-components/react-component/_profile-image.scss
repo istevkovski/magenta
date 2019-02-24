@@ -8,4 +8,14 @@
     background-color: $color-white;
     border-radius: 100%;
     box-shadow: 0px 3px 6px rgba(0,0,0,.06);
+    animation: scaleIn .25s normal;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }

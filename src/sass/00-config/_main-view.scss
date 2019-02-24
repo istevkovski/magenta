@@ -1,36 +1,5 @@
-//.main-view .main-display {
-////     position: relative;
-////
-////     &:before {
-////         position: absolute;
-////         content: '';
-////         top: 0;
-////         left: -50vw;
-////         width: 50vw;
-////         height: 100vh;
-////         z-index: -1;
-////         background-color: $color-background;
-////     }
-//// }
-////
-////.main-view .side-display {
-////    position: relative;
-////
-////    &:after {
-////        position: absolute;
-////        content: '';
-////        top: 0;
-////        right: -50vw;
-////        width: 50vw;
-////        height: 100vh;
-////        z-index: -1;
-////        background-color: $color-branding;
-////    }
-////}
-
 @media only screen and (max-width: $size-screen-mobile-l) {
     .main-view .main-display {
-        padding-left: $spacing-default-half;
-        padding-bottom: $spacing-default-half;
+        padding: $spacing-default-half;
     }
 }

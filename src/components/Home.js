@@ -35,7 +35,6 @@ class Home extends Component {
     async offeringsLoadHelper() {
         const snapshot = await firebase.firestore().collection("offerings").orderBy("enum", "asc").get();
         this.setState({offerings: snapshot.docs.map(doc => doc.data())});
-        console.log(snapshot.docs.map(doc => doc.data()));
     }
 
     async componentDidMount() {

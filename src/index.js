@@ -12,6 +12,7 @@ const App = () => {
             <div>
                 <Route path="/" exact component={Home}/>
                 <Route path="/about" component={About}/>
+                <footer>2019 copyright © Ivan Stevkovski</footer>
             </div>
         </BrowserRouter>
     );
