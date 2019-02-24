@@ -9,10 +9,12 @@
     background-color: $color-white;
     border-radius: 3px;
     z-index: 1;
+    animation: scaleIn .25s normal;
 
     > h2 {
         display: flex;
         justify-content: center;
+        margin-bottom: $spacing-default;
         font-family: $font-poppins;
         font-weight: 500;
         font-size: $size-font-l;

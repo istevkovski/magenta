@@ -1,8 +1,11 @@
-import * as firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/database';
+import 'firebase/firestore';
 
 // Set the configuration for your app
 // TODO: Replace with your project's config object
-var config = {
+const config = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
     databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
@@ -14,6 +17,5 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 const db = firebase.firestore();
-const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-export { firebase, googleAuthProvider, database as default, db };
+export { firebase, database as default, db };

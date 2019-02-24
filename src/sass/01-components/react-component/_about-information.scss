@@ -3,6 +3,7 @@
     font-family: $font-poppins;
     font-size: $size-font-m;
     font-weight: 300;
+    animation: fadeIn .35s linear;
 
     > div {
         display: flex;
@@ -30,6 +31,7 @@
         margin-bottom: 5px;
         padding: 3px;
         border: 1px solid $color-branding;
+        animation: scaleIn .25s normal;
 
         &:not(:last-child) {
             margin-right: 5px;

@@ -5,7 +5,7 @@ import SocialLinks from './SocialLinks';
 import SideDisplay from './SideDisplay';
 import ProfileImage from './ProfileImage';
 import ContactForm from './ContactForm';
-import TinyDisplayCard from './TinyDisplayCard';
+import TinyDisplay from './TinyDisplay';
 import {firebase} from '../firebase/firebase';
 
 class Contact extends Component {
@@ -37,24 +37,7 @@ class Contact extends Component {
                         <PersonDescription/>
                     </div>
                     <SocialLinks marginPosition="both" />
-                    <div className="tiny-display-cards-wrapper margin-default-half-top margin-default-half-bottom">
-                        <TinyDisplayCard>
-                            <i className="fab fa-internet-explorer fa-3x"></i>
-                            <h2>Support for IE11</h2>
-                        </TinyDisplayCard>
-                        <TinyDisplayCard>
-                            <i className="fab fa-internet-explorer fa-3x"></i>
-                            <h2>Support for IE11</h2>
-                        </TinyDisplayCard>
-                        <TinyDisplayCard>
-                            <i className="fab fa-internet-explorer fa-3x"></i>
-                            <h2>Support for IE11</h2>
-                        </TinyDisplayCard>
-                        <TinyDisplayCard>
-                            <i className="fab fa-internet-explorer fa-3x"></i>
-                            <h2>Support for IE11</h2>
-                        </TinyDisplayCard>
-                    </div>
+                    <TinyDisplay/>
                 </div>
                 <SideDisplay sideButtonsState='off' className="padding-default">
                     <ContactForm />

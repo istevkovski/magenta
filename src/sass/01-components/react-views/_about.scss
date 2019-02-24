@@ -8,10 +8,6 @@
         bottom: 0;
         right: $spacing-default;
     }
-
-    .person-description {
-        animation: slideRight .25s normal;
-    }
 }
 
 @media only screen and (max-width: $size-screen-mobile-l) {

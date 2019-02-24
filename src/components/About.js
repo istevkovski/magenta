@@ -36,7 +36,6 @@ class About extends Component {
     async sideDisplayCardsLoadHelper() {
         const snapshot = await firebase.firestore().collection("projects").orderBy("enum", "asc").get();
         this.setState({projects: snapshot.docs.map(doc => doc.data())});
-        console.log(snapshot.docs.map(doc => doc.data()));
     }
 
     async componentDidMount() {
@@ -58,10 +57,12 @@ class About extends Component {
                                 <h4>{item.name}</h4>
                                 <p>{item.description}</p>
                             </div>
-                            <a href={item.link} target="blank"></a>
+                            <a href={item.link} target="blank">{item.link}</a>
                         </div>
                     }
                 </FeatureDisplayCard>);
+            } else {
+                return null;
             }
         });
 

@@ -3,7 +3,6 @@ import PersonDescription from './PersonDescription';
 import ButtonHire from './ButtonHire';
 import HeaderNavigation from './HeaderNavigation';
 import SocialLinks from './SocialLinks';
-import ButtonCircle from './ButtonCircle';
 import SideDisplay from './SideDisplay';
 import FeatureDisplayCard from './FeatureDisplayCard';
 import {firebase} from '../firebase/firebase';
@@ -54,6 +53,8 @@ class Home extends Component {
                         </div>
                     }
                 </FeatureDisplayCard>);
+            } else {
+                return null;
             }
         });
 

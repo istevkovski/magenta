@@ -34,6 +34,9 @@ $color-white: #fff;
 $color-background: #FCFCFC;
 $color-contrast: #505050;
 
+// Filters
+$color-filter-contrast: invert(28%) sepia(14%) saturate(0%) hue-rotate(185deg) brightness(100%) contrast(89%);
+
 /* endOf Colors */
 
 /* Screen Sizes */

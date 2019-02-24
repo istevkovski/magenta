@@ -19,12 +19,9 @@
         margin-bottom: $spacing-default-half;
     }
 
-    .person-description {
-        animation: slideRight .25s normal;
-    }
-
     .tiny-display-cards-wrapper {
         margin-top: 180px;
+        margin-bottom: 80px;
     }
 }
 
@@ -54,6 +51,11 @@
             justify-content: center;
             top: 0;
             right: 0;
+            margin-bottom: 0;
+        }
+
+        .tiny-display-cards-wrapper {
+            margin-top: 100px;
             margin-bottom: 0;
         }
     }
