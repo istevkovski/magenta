@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://primology.github.io/magenta/",
   "dependencies": {
+    "firebase": "^5.8.4",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
