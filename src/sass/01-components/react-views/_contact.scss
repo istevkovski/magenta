@@ -1,0 +1,64 @@
+.contact.main-view {
+    .header-navigation {
+        margin-bottom: 60px;
+    }
+
+    .social-links {
+        position: absolute;
+        bottom: 0;
+        right: $spacing-default;
+    }
+
+    .person-information {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .person-information .profile-image {
+        margin-bottom: $spacing-default-half;
+    }
+
+    .person-description {
+        animation: slideRight .25s normal;
+    }
+
+    .tiny-display-cards-wrapper {
+        margin-top: 180px;
+    }
+}
+
+@media only screen and (max-width: $size-screen-mobile-l) {
+    .contact.main-view {
+        .header-navigation {
+            margin-bottom: $spacing-default;
+        }
+
+        .person-information {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-image {
+            margin-bottom: $spacing-default-half;
+        }
+
+        .person-description {
+            margin: 0;
+            text-align: center;
+        }
+
+        .social-links {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 0;
+            right: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .contact .side-display {
+        padding: 10px;
+    }
+}

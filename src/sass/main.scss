@@ -17,10 +17,14 @@
 @import "./01-components/react-component/loading";
 @import "./01-components/react-component/profile-image";
 @import "./01-components/react-component/about-information";
+@import "./01-components/react-component/project-card";
+@import "./01-components/react-component/contact-form";
+@import "./01-components/react-component/tiny-display-cards";
 
+@import "./01-components/react-views/side-display";
 @import "./01-components/react-views/home";
 @import "./01-components/react-views/about";
-@import "./01-components/react-views/side-display";
+@import "./01-components/react-views/contact";
 
 @import "./02-layouts/base/body";
 @import "./02-layouts/base/footer";

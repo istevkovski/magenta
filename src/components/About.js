@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import PersonDescription from './PersonDescription';
-import ButtonHire from './ButtonHire';
 import HeaderNavigation from './HeaderNavigation';
 import SocialLinks from './SocialLinks';
-import ButtonCircle from './ButtonCircle';
 import SideDisplay from './SideDisplay';
 import ProfileImage from './ProfileImage';
 import FeatureDisplayCard from './FeatureDisplayCard';
@@ -15,46 +13,52 @@ class About extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            offerings: [],
-            offeringsPagination: 0
+            projects: [],
+            sideDisplayPagination: 0
         };
 
-        this.offeringsPaginationIncrease = this.offeringsPaginationIncrease.bind(this);
-        this.offeringsPaginationDecrease = this.offeringsPaginationDecrease.bind(this);
+        this.sideDisplayPaginationIncrease = this.sideDisplayPaginationIncrease.bind(this);
+        this.sideDisplayPaginationDecrease = this.sideDisplayPaginationDecrease.bind(this);
     }
 
-    offeringsPaginationIncrease() {
-        if(this.state.offeringsPagination < this.state.offerings.length - 3){
-            this.setState({offeringsPagination: this.state.offeringsPagination + 1});
+    sideDisplayPaginationIncrease() {
+        if(this.state.sideDisplayPagination < this.state.projects.length - 3){
+            this.setState({sideDisplayPagination: this.state.sideDisplayPagination + 1});
         }
     }
 
-    offeringsPaginationDecrease() {
-        if(this.state.offeringsPagination > 0) {
-            this.setState({offeringsPagination: this.state.offeringsPagination - 1});
+    sideDisplayPaginationDecrease() {
+        if(this.state.sideDisplayPagination > 0) {
+            this.setState({sideDisplayPagination: this.state.sideDisplayPagination - 1});
         }
     }
 
-    async offeringsLoadHelper() {
-        const snapshot = await firebase.firestore().collection("offerings").orderBy("enum", "asc").get();
-        this.setState({offerings: snapshot.docs.map(doc => doc.data())});
+    async sideDisplayCardsLoadHelper() {
+        const snapshot = await firebase.firestore().collection("projects").orderBy("enum", "asc").get();
+        this.setState({projects: snapshot.docs.map(doc => doc.data())});
         console.log(snapshot.docs.map(doc => doc.data()));
     }
 
     async componentDidMount() {
-        await this.offeringsLoadHelper();
+        await this.sideDisplayCardsLoadHelper();
     }
-
 
     render() {
         const that = this;
-        const offerings = this.state.offerings.map(function (item, index) {
-            if(index >= that.state.offeringsPagination && index < that.state.offeringsPagination + 3){
-                return (<FeatureDisplayCard key={`offering${index}`} className="padding-default">
+        const projects = this.state.projects.map(function (item, index) {
+            if(index >= that.state.sideDisplayPagination && index < that.state.sideDisplayPagination + 3){
+                return (<FeatureDisplayCard key={`project${index}`}>
                     {
-                        <div>
-                            {<div className="content" dangerouslySetInnerHTML={{__html:item.icon}}></div>}
-                            <h4>{item.description}</h4>
+                        <div className="project-card">
+                            <div>
+                                <i className="fab fa-angrycreative fa-3x"></i>
+                                {<div className="content" dangerouslySetInnerHTML={{__html:item.icon}}></div>}
+                            </div>
+                            <div>
+                                <h4>{item.name}</h4>
+                                <p>{item.description}</p>
+                            </div>
+                            <a href={item.link} target="blank"></a>
                         </div>
                     }
                 </FeatureDisplayCard>);
@@ -70,14 +74,10 @@ class About extends Component {
                         <PersonDescription className="margin-default-left"/>
                     </div>
                     <AboutInformation/>
-                    <SocialLinks marginPosition="both">
-                        <ButtonCircle socialMedia="linkedin"/>
-                        <ButtonCircle socialMedia="facebook"/>
-                        <ButtonCircle socialMedia="instagram"/>
-                    </SocialLinks>
+                    <SocialLinks marginPosition="both" />
                 </div>
-                <SideDisplay handleOfferingIncrease={this.offeringsPaginationIncrease} handleOfferingDecrease={this.offeringsPaginationDecrease}>
-                    {offerings !== undefined ? offerings : ''}
+                <SideDisplay handleOfferingIncrease={this.sideDisplayPaginationIncrease} handleOfferingDecrease={this.sideDisplayPaginationDecrease}>
+                    {projects !== undefined ? projects : ''}
                 </SideDisplay>
             </div>
         );

@@ -38,8 +38,8 @@ class AboutInformation extends Component {
                     <p>Skills:</p>
                     <div>
                         {this.state.skills.length ?
-                            this.state.skills.map(function (item) {
-                                return <span>{item.skill}</span>
+                            this.state.skills.map(function (item, index) {
+                                return <span key={`skill-${index}`}>{item.skill}</span>
                                 })
                             : ''}
                     </div>

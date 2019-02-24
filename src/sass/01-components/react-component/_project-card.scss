@@ -1,0 +1,29 @@
+.feature-display-card .project-card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    > * {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding: 15px;
+    }
+
+    > a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    h4 {
+        padding-bottom: 10px;
+        font-size: $size-font-m;
+        font-weight: 600;
+        color: $color-branding;
+    }
+}

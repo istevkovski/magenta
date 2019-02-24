@@ -65,11 +65,7 @@ class Home extends Component {
                         <PersonDescription />
                     </div>
                     <ButtonHire>Hire Me!</ButtonHire>
-                    <SocialLinks marginPosition="both">
-                        <ButtonCircle socialMedia="linkedin"/>
-                        <ButtonCircle socialMedia="facebook"/>
-                        <ButtonCircle socialMedia="instagram"/>
-                    </SocialLinks>
+                    <SocialLinks marginPosition="both"/>
                 </div>
                 <SideDisplay handleOfferingIncrease={this.offeringsPaginationIncrease} handleOfferingDecrease={this.offeringsPaginationDecrease}>
                     {offerings !== undefined ? offerings : ''}

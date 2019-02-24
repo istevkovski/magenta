@@ -9,7 +9,7 @@ const HeaderNavigation = props => {
             <div>
                 <Link to="/about" className={`link ${props.aboutActive !== undefined ? props.aboutActive : ''}`}>About</Link>
                 <Link to="/learnmore" className="link">Learn More</Link>
-                <Link to="/contact" className="link">Contact</Link>
+                <Link to="/contact" className={`link ${props.contactActive !== undefined ? props.contactActive : ''}`}>Contact</Link>
             </div>
         </nav>
     );

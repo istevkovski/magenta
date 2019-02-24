@@ -4,9 +4,9 @@ import ButtonCircle from './ButtonCircle';
 const SideDisplay = (props) => {
 
     return (
-        <div className="side-display">
+        <div className={`side-display ${props.className}`}>
             {props.children}
-            <div className="slide-buttons">
+            <div className={`slide-buttons ${props.sideButtonsState}`}>
                 <ButtonCircle material="keyboard_arrow_up" className="prev" onClick={props.handleOfferingDecrease}/>
                 <ButtonCircle material="keyboard_arrow_down" className="next" onClick={props.handleOfferingIncrease}/>
             </div>
