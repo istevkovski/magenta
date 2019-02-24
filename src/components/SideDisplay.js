@@ -7,8 +7,8 @@ const SideDisplay = (props) => {
         <div className="side-display">
             {props.children}
             <div className="slide-buttons">
-                <ButtonCircle material="keyboard_arrow_up" className="prev" onClick={props.handleOfferingIncrease}/>
-                <ButtonCircle material="keyboard_arrow_down" className="next" onClick={props.handleOfferingDecrease}/>
+                <ButtonCircle material="keyboard_arrow_up" className="prev" onClick={props.handleOfferingDecrease}/>
+                <ButtonCircle material="keyboard_arrow_down" className="next" onClick={props.handleOfferingIncrease}/>
             </div>
         </div>
     );
