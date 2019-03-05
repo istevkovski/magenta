@@ -57,7 +57,7 @@ class About extends Component {
                                 <h4>{item.name}</h4>
                                 <p>{item.description}</p>
                             </div>
-                            <a href={item.link} target="blank">{item.link}</a>
+                            <a href={item.link} aria-label="Click to go to project." target="blank">{item.link}</a>
                         </div>
                     }
                 </FeatureDisplayCard>);

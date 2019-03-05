@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route} from "react-router-dom";
 import "./sass/main.scss";
+import * as serviceWorker from "./serviceWorker";
 
 import Home from './components/Home';
 import About from './components/About';
@@ -21,3 +22,4 @@ const App = () => {
 };
 
 ReactDOM.render(<App />, document.querySelector("#root"));
+serviceWorker.register();
